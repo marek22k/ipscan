@@ -217,7 +217,7 @@ def deb(def platform, def arch, def moreDeps = '') {
     ant.copy(file: "resources/images/icon128.png", tofile: "${dist}/usr/share/pixmaps/ipscan.png")
 
     ant.replace(file: "${dist}/DEBIAN/control") {
-        ant.replacefilter(token: "VERSION", value: version)
+        ant.replacefilter(token: "VERSION", value: "10")
         ant.replacefilter(token: "ARCH", value: arch)
         ant.replacefilter(token: "DEPENDS ", value: moreDeps)
     }
@@ -279,7 +279,6 @@ def macLauncher(def platform) {
 
 packageTask('linux64') {
     deb('linux64', 'amd64')
-    rpm('linux64', 'x86_64')
 }
 
 packageTask('any') {
