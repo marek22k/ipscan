@@ -40,7 +40,7 @@ public class SQLExporter extends AbstractExporter {
 			for (int i = 1; i < fetcherNames.length; i++) {
 				output.print(COMMA);
 				output.print(" `" + fetcherNames[i] + "` ");
-				output.print("varchar(20)"); //Default type
+				output.print("varchar(255)"); //Default type
 			}
 			output.println(");");
 		}
