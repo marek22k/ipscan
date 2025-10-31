@@ -3,7 +3,7 @@
   see http://www.angryip.org/ for more information.
   Licensed under GPLv2.
  */
-package net.azib.ipscan.fetchers;
+package net.azib.ipscan.core.net;
 
 import net.azib.ipscan.config.Labels;
 import net.azib.ipscan.core.Plugin;
