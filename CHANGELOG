@@ -7,6 +7,8 @@ Changes in 3.9.3:
 - Recognition of IPv6 addresses in IP list files
 - Allow plugin to merge multiple ping results
 - The UDP pinger now uses the same port as traceroute programs.
+- Switch from the legacy Date API to Java's new Time API
+- Time is now specified in 24-hour format in XML export
 
 Changes in 3.9.2:
 - Linux: specify Java 17 as minimum required version in .deb and .rpm packages
