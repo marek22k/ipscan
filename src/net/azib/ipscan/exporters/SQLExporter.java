@@ -36,7 +36,7 @@ public class SQLExporter extends AbstractExporter {
 
 	public void setFetchers(String[] fetcherNames) throws IOException {
 		if (!append) {
-			output.print("CREATE TABLE " + TABLE_NAME + " (`" + fetcherNames[0] + "` varchar(20)");
+			output.print("CREATE TABLE " + TABLE_NAME + " (`" + fetcherNames[0] + "` varchar(255)");
 			for (int i = 1; i < fetcherNames.length; i++) {
 				output.print(COMMA);
 				output.print(" `" + fetcherNames[i] + "` ");
